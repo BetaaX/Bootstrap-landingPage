@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - LadingPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand fs-3 m-0 flame">
+                <i class="bi bi-fire"></i>
+                FlamingCuisine
+            </h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigation-menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="navigation-menu">
+                <ul class="nav nav-pills d-block d-md-flex pt-nav-3">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link active" href="#about">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#events">
+                            <i class="bi bi-calendar-check me-1"></i>
+                            Eventos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#catalog">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso Cardápio
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#contact-us">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale Conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>  
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2500">
+                                <img class="w-100 ratio-4x3" src="https://images.pexels.com/photos/6274557/pexels-photo-6274557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Milan, Lombardy.">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2500">
+                                <img class="w-100" src="https://images.pexels.com/photos/2339009/pexels-photo-2339009.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tokyo, Japan.">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2500">
+                                <img class="w-100" src="https://images.pexels.com/photos/3484001/pexels-photo-3484001.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Berlin, Edifício Brown And Blue Dome.">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" data-bs-target="#carousel" data-bs-slide="prev" type="button">
+                            <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button class="carousel-control-next" data-bs-target="#carousel" data-bs-slide="next" type="button">
+                            <span class="carousel-control-next-icon"></span>
+                        </button>
+                        
+                        <div class="carousel-indicators">
+                            <button class="active" type="button" data-bs-target="#carousel" data-bs-slide-to="0"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 pb-5">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <img src="https://images.pexels.com/photos/17907278/pexels-photo-17907278/free-photo-of-rv-casal-conjuges-alvorecer.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="d-block w-100 rounded" alt="">
+                            </div>
+                            <div class="col-md-7 mt-3 mt-md-0">
+                                <h2>Sobre <span class="text-colored">o Site</span></h2>
+                                <p>
+                                    Bem-vindo ao <strong class="flame">FlamingCuisine!</strong><br>
+                                    Em nosso site, celebramos a culinária única que une sabores frescos e inovação. Cada prato reflete nosso compromisso com uma experiência gastronômica que eleva o espírito. 
+                                    Seja parte dessa celebração da vitalidade!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="events" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para Todas <span class="text-colored">as Ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="images/eventos/aniversario.jpg" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-calendar-heart-fill"></i>
+                            Aniversários
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, esse reiciendis vel possimus ducimus quis facilis neque vitae earum consectetur libero, corrupti nulla eos non officia numquam, illo quod aliquam!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="images/eventos/casamento.jpg" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-arrow-through-heart-fill"></i>
+                            Recepção para casamentos
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, esse reiciendis vel possimus ducimus quis facilis neque vitae earum consectetur libero, corrupti nulla eos non officia numquam, illo quod aliquam!
+                        </p>
+                    </div>
+                    <div class="col-md-4">
+                        <img class="d-block w-100 rounded mb-2" src="images/eventos/confraternizacoes.jpg" alt="">
+                        <h3 class="section-title text-colored fs-4">
+                            <i class="bi bi-people-fill"></i>
+                            Confraternizações
+                        </h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, esse reiciendis vel possimus ducimus quis facilis neque vitae earum consectetur libero, corrupti nulla eos non officia numquam, illo quod aliquam!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="catalog" class="pt-5 pb-5">
+            <div class="container-catalog">
+                <div class="block">
+                    <div class="row">
+                        <h2 class="section-title text-center mb-5">
+                            Nosso <span class="text-colored">Cardápio</span>
+                        </h2>
+                    </div>
+                    <div class="row">
+                        <aside class="col-md-2">
+                            <nav class="nav nav-pills flex-column nav-catalog">
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#breakfast" class="fw-bold text-start nav-link text-colored active">Café da Manhã Ardente</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#bebidas-alcoolicas" class="fw-bold text-start nav-link text-colored">Almoço Intenso</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#pratos-principais" class="fw-bold text-start nav-link text-colored">Sobremesas Vibrantes</button>
+                                <button type="button" data-bs-toggle="tab" data-bs-target="#entradas" class="fw-bold text-start nav-link text-colored">Jantar Saboroso</button>
+                            </nav>
+                        </aside>
+                        <div class="col-md-10">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="breakfast">
+                                    <div class="row 3">
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="https://images.pexels.com/photos/4112870/pexels-photo-4112870.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Smoothie de amendoim.">
+                                            <h5 class="text-colored fw-bold mt-2">Smoothie de Amendoim Energético</h5>
+                                            <p>Uma mistura cremosa de amendoim, banana e iogurte. Bata todos os ingredientes no liquidificador até ficar homogêneo.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="https://images.pexels.com/photos/3323680/pexels-photo-3323680.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Panqueca com blueberry.">
+                                            <h5 class="text-colored fw-bold mt-2">Panqueca com Blueberry</h5>
+                                            <p>Panquecas fofas repletas de blueberries suculentas. Misture a massa, adicione blueberries e cozinhe até dourar dos dois lados.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="https://images.pexels.com/photos/7474211/pexels-photo-7474211.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Cupcakes com de chocolate com morango.">
+                                            <h5 class="text-colored fw-bold mt-2">Cupcakes de Chocolate com Morango</h5>
+                                            <p>Cupcakes de chocolate macios. Prepare a massa de chocolate, asse até ficarem prontos e coloque um morango em cada cupcake.</p>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <img class="d-block w-100" src="https://images.pexels.com/photos/18623745/pexels-photo-18623745/free-photo-of-cidade-meio-urbano-plataforma-transporte-publico.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Coca-Cola">
+                                            <h5 class="text-colored fw-bold mt-2">Coca-Cola</h5>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="bebidas-alcoolicas">
+                                    <div class="row">
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="entradas">
+                                    <div class="row">
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="pratos-principais">
+                                    <div class="row">
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="sobremesas">
+                                    <div class="row">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-us" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row pb-4">
+                    <h2 class="section-title text-center">Fale <span class="text-colored">Conosco</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Seu Nome:</label>
+                                <input type="text" id="nome" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-bold text-colored">Seu E-mail:</label>
+                                <input type="email" id="email" class="form-control" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefone" class="form-label fw-bold text-colored">Seu telefone(Opcional):</label>
+                                <input type="tel" id="telefone" class="form-control">
+                            </div>
+                            <div class="mb-3">
+                                <label for="nome" class="form-label fw-bold text-colored">Sua Mensagem:</label>
+                                <textarea class="form-control" id="mensagem" required></textarea>
+                            </div>
+                            <button type="submit" class="btn fw-bold">Enviar</button>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais
+                            </h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="#" >
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 2 me-2">
+                                    <a href="#" >
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="#" >
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="section-title fs-4 text-colored">
+                                <i class="bi bi-cursor-fill"></i>
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo nº 145, Bairro Bootstrap - Rio de Janeiro - RJ
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    
+    <script src="./JS/main.js"></script>
+</body>
+</html>
