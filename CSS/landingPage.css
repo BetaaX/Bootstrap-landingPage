@@ -13,7 +13,8 @@ header {
     color: #2f0101;
 }
 
-.flame {
+.flame,
+.flame:hover {
     background: linear-gradient(to right, #D00000, #FFBA08);
     -webkit-background-clip: text;
     background-clip: text;
@@ -27,6 +28,10 @@ header {
 
 .navbar .nav-link {
     color: #FFBA08;
+}
+
+.events-imgs img {
+    height: 26rem;
 }
 
 .nav-catalog .nav-link.active,
@@ -63,39 +68,40 @@ button.btn:hover {
     color: #FFFAEF;
 }
 
-@media (max-width: 575px) {
+@media (max-width: 575.99px) {
     #catalog img {
         height: 27rem;
     }
-}
 
-@media (max-width: 767px) {
-    .carousel-item img {
-        height: 280px;
+    .carousel img {
+        max-height: 30rem;
     }
 }
 
-@media (max-width: 991px) {
+@media (max-width: 767.99px) {
+    .carousel-item img {
+        height: 280px;
+    }
+
+    .events-imgs img {
+        height: 28rem;
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 991.99px) {
     .pt-nav-3 {
         padding-top: 16px;
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-    .container-catalog {
-        display: flex;
-        justify-content: center;
-        width: 98%;
-    }
-
-    .container-catalog .block {
-        display: block;
-        margin-left: auto;
-        margin-top: auto;
+@media (min-width: 768px) and (max-width: 991.99px) {
+    #catalog img {
+        height: 19rem;
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
     #catalog img {
         height: 16rem;
     }
